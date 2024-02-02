@@ -30,7 +30,7 @@ To run the Myntra Clone locally, follow these steps:
 
 ### Clone the repository
 ```bash
-git clone https://github.com/your-username/myntra-clone.git
+git clone https://github.com/er-devarun/Myntra-Clone.git
 ```
 
 ### Navigate to the front end project directory
@@ -42,6 +42,7 @@ cd front-end
 ```bash
 npm install
 ```
+
 ### With the new terminal navigate to the back end project directory
 ```bash
 cd node-backend
