@@ -21,7 +21,7 @@ Myntra Clone is a web application that replicates the popular Indian eCommerce p
 
 ## Demo
 
-Check out the live demo of the Myntra Clone at [https://example.com](https://example.com).
+Check out the live demo of the Myntra Clone at [https://myntra-clone-front-end.vercel.app/](https://myntra-clone-front-end.vercel.app/).
 
 ## Installation
 
