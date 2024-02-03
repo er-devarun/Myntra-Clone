@@ -7,14 +7,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const corsConfig = {
-    origin: '',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
-};
-app.use(cors(corsConfig));
-app.options("", cors(corsConfig));
-
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
