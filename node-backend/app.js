@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const { getStoredItems, storeItems } = require('./data/items');
+const { getStoredItems, storeItems } = require('./data/items.js');
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send("Hello world!");
+  res.send("Hello world! Your Server is live now");
 });
 
 app.get('/items', async (req, res) => {
