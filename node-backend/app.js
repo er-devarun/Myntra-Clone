@@ -15,7 +15,9 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  setTimeout(res.send("Hello world! Your Server is live now"), 3000);
+  setTimeout(()=>{
+    res.send("Hello world! Your Server is live now");
+  }, 3000);
 });
 
 app.get('/item', (req, res) => {
