@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/item', (req, res) => {
-  setTimeOut(() => {
 
     res.json({ items: [
     {
@@ -323,9 +322,6 @@ app.get('/item', (req, res) => {
       }
     }
   ] });
-
-    
-  }, 2000);
   
 });
 
