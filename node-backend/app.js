@@ -323,11 +323,17 @@ app.get('/item', (req, res) => {
   ] });
 });
 
+try{
 app.get('/items', async (req, res) => {
   const storedItems = await getStoredItems();
   // await new Promise((resolve, reject) => setTimeout(() => resolve(), 2000));
   res.json({ items: storedItems });
 });
+}
+
+catch(err){
+  res.send("Error occured is", err);
+};
 
 app.get('/items/:id', async (req, res) => {
   const storedItems = await getStoredItems();
