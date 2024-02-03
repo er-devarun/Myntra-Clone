@@ -79,3 +79,7 @@ Visit http://localhost:5173 in your web browser to explore the Myntra Clone.
 - Node.js (for backend API)
 
 ## Screenshots
+![myntra_home_page](https://github.com/er-devarun/Myntra-Clone/assets/137439924/4f7b6560-b3e0-4bf0-88d3-303fccb5e02d)
+![myntra_footer](https://github.com/er-devarun/Myntra-Clone/assets/137439924/a76b7934-6dd3-4a82-a556-779b12ce8882)
+![myntra_bag_badge](https://github.com/er-devarun/Myntra-Clone/assets/137439924/6d634730-0ffa-4433-b58c-10780d38d3ef)
+![myntra_bag_page](https://github.com/er-devarun/Myntra-Clone/assets/137439924/a968eac0-6a12-4481-8514-2d2ad3d6e638)
