@@ -19,8 +19,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/itemList', (req, res) => {
-
-    res.json({ items: [
+    setTimeout(() => {
+      res.json({ items: [
     {
       id: "001",
       image: "/images/1.png",
@@ -322,7 +322,8 @@ app.get('/itemList', (req, res) => {
       }
     }
   ] });
-  
+    }, 2000);
+    
 });
 
 app.get('/items', async (req, res) => {
