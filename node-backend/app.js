@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.send("Server is live now");
 });
 
-app.get('/item', (req, res) => {
+app.get('/itemList', (req, res) => {
 
     res.json({ items: [
     {
