@@ -23,7 +23,7 @@ app.get('/itemList', (req, res) => {
       res.json({ items: [
     {
       id: "001",
-      image: "/images/1.png",
+      image: "/images/1.webp",
       company: "Nautica",
       item_name: "Henley Neck Cotton T-shirt",
       original_price: 2199,
@@ -38,7 +38,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "002",
-      image: "/images/2.png",
+      image: "/images/2.webp",
       company: "Roadster",
       item_name: "Printed Round Neck Pure Cotton T-shirt",
       original_price: 899,
@@ -53,7 +53,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "003",
-      image: "/images/3.png",
+      image: "/images/3.webp",
       company: "The Indian Garage Co",
       item_name: "Men Slim Fit Casual Shirt",
       original_price: 1649,
@@ -68,7 +68,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "004",
-      image: "/images/4.png",
+      image: "/images/4.webp",
       company: "Roadster",
       item_name: "Men Casual Shirt",
       original_price: 1899,
@@ -83,7 +83,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "005",
-      image: "/images/5.png",
+      image: "/images/5.webp",
       company: "Red Tape",
       item_name: "Men Textured Walking Shoes",
       original_price: 6099,
@@ -98,7 +98,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "006",
-      image: "/images/6.png",
+      image: "/images/6.webp",
       company: "HRX by Hrithik Roshan",
       item_name: "Men Running Sports Shoes",
       original_price: 2999,
@@ -113,7 +113,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "007",
-      image: "/images/7.png",
+      image: "/images/7.webp",
       company: "TKALINI",
       item_name: "Kanjeevaram Pure Silk Saree",
       original_price: 3299,
@@ -128,7 +128,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "008",
-      image: "/images/8.png",
+      image: "/images/8.webp",
       company: "Tokyo Talkies",
       item_name: "Women Solid Denim Jacket",
       original_price: 2149,
@@ -143,7 +143,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "009",
-      image: "/images/9.png",
+      image: "/images/9.webp",
       company: "BEARDO",
       item_name: "Godfather Eau De Parfum 100ml",
       original_price: 1200,
@@ -158,7 +158,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "010",
-      image: "/images/10.png",
+      image: "/images/10.webp",
       company: "Nivea",
       item_name: "Men Fresh Deodorant 150ml",
       original_price: 285,
@@ -173,7 +173,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "011",
-      image: "/images/11.png",
+      image: "/images/11.webp",
       company: "VEGA",
       item_name: "Men VHTH-32 Grooming Trimmer",
       original_price: 1999,
@@ -188,7 +188,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "012",
-      image: "/images/12.png",
+      image: "/images/12.webp",
       company: "LOreal",
       item_name: "6 Oil Nourish Shampoo",
       original_price: 219,
@@ -203,7 +203,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "013",
-      image: "/images/13.png",
+      image: "/images/13.webp",
       company: "The Indian Garage Co",
       item_name: "Men Slim Fit Jeans",
       original_price: 1999,
@@ -218,7 +218,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "014",
-      image: "/images/14.png",
+      image: "/images/14.webp",
       company: "Jack & Jones",
       item_name: "Men Slim Fit Light Fade Jeans",
       original_price: 2999,
@@ -233,7 +233,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "015",
-      image: "/images/15.png",
+      image: "/images/15.webp",
       company: "Saraf RS Jewellery",
       item_name: "Rose Gold-Plated AD-Studded Jewellery Set",
       original_price: 6000,
@@ -248,7 +248,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "016",
-      image: "/images/16.png",
+      image: "/images/16.webp",
       company: "Fire-Boltt",
       item_name: "Eclipse Luxe 1.43inch Amoled",
       original_price: 19999,
@@ -263,7 +263,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "017",
-      image: "/images/17.png",
+      image: "/images/17.webp",
       company: "pebble",
       item_name: "Cosmos Quest Smartwatch",
       original_price: 9999,
@@ -278,7 +278,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "018",
-      image: "/images/18.png",
+      image: "/images/18.webp",
       company: "Mast & Harbour",
       item_name: "Men Solid Bomber Jacket",
       original_price: 3999,
@@ -293,7 +293,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "019",
-      image: "/images/19.png",
+      image: "/images/19.webp",
       company: "CURVY STREET",
       item_name: "Plus Size Floral Print Top",
       original_price: 1699,
@@ -308,7 +308,7 @@ app.get('/itemList', (req, res) => {
     },
     {
       id: "020",
-      image: "/images/20.png",
+      image: "/images/20.webp",
       company: "DressBerry",
       item_name: "Self Design Lace Top With Slip",
       original_price: 1499,
