@@ -1,13 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
-// import { DEFAULT_ITEMS } from '../data/items';
+
+let items = [];
 
 const itemSlice = createSlice({
     name: 'items',
     initialState: [],
     reducers: {
-        addInitialItems: (store, action) => {
+        addInitialItems: (state, action) => {
+            items = action.payload;
             return action.payload;
-        }
+        },
+        displaySearchItem: (state, action) => {
+            return items.filter((item) => item.item_name.toLowerCase().replace(/[^a-zA-Z ]/g, "").includes(action.payload.toLowerCase()));
+        },
     }
 });
 

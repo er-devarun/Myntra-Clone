@@ -13,7 +13,7 @@ function BagItem({item}){
     return(
             <div className="bag-item-container">
                 <div className="item-left-part">
-                    <img className="bag-item-img" src={item.image}/>
+                    <img loading="lazy" className="bag-item-img" src={item.image} alt={item.item_name}/>
                 </div>
                 <div className="item-right-part">
                     <div className="company">{item.company}</div>

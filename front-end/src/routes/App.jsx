@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import FetchItems from '../components/FetchItems'
 import { useSelector } from 'react-redux'
 import LoadingSpinner from '../components/LoadingSpinner'
+import { Suspense } from 'react'
 
 function App() {
   const {fetchDone, currentlyFetching} = useSelector(store => store.fetchStatus)
@@ -11,7 +12,7 @@ function App() {
     <>
       <Header/>
       <FetchItems/>
-      {currentlyFetching ? <LoadingSpinner/> : <Outlet/>}
+      {currentlyFetching ? <LoadingSpinner/> : <Suspense><Outlet/></Suspense>}
       <Footer/>
     </>
   )

@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './routes/App.jsx'
-import Bag from './routes/Bag.jsx'
 import {RouterProvider, createBrowserRouter} from "react-router-dom"
-import Home from './routes/Home.jsx'
 import { Provider } from 'react-redux';
 import myntraStore from './store/index.js'
 import './index.css';
+import Success from './routes/Success.jsx';
+const Home = lazy(() => import('./routes/Home.jsx'));
+const Bag = lazy(() => import('./routes/Bag.jsx'));
 
 const router = createBrowserRouter([
   {path: "/", 
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
     {path: "/", element: <Home/>},
     {path: "/bag", element: <Bag/>},
   ]},
+  {path: "/success", element: <Success/>},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

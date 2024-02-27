@@ -2,12 +2,27 @@ import { IoPerson } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa6";
 import { IoBagHandle } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { IoSearch } from "react-icons/io5";
+import { useEffect, useState } from "react";
+import { itemsActions } from "../store/itemsSlice";
 
 function Header(){
 
     const bag = useSelector(store => store.bag);
+    const [serchItem, setSearchItem] = useState("");
+    const dispatch = useDispatch();
+
+    const handleSearchBox = (event) => {
+        setSearchItem(event.target.value);
+    }
+
+    const handleSearchInput = (event) => {
+        if(event.key === "Enter"){
+            // console.log(serchItem);
+            dispatch(itemsActions.displaySearchItem(serchItem));
+        }
+    }
 
     return(
         <header>
@@ -24,7 +39,7 @@ function Header(){
             </nav>
             <div className="search-bar">
                 <IoSearch className="search-icon"/>
-                <input className="search-input" placeholder="Search for products, brands and more"/>
+                <input className="search-input" placeholder="Search for products, brands and more" value={serchItem} onChange={(event) => handleSearchBox(event)} onKeyDown={(event) => handleSearchInput(event)}/>
             </div>
             <div className="action-bar">
                 <div className="action-container">

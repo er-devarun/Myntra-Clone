@@ -18,7 +18,7 @@ function HomeItem({item}){
 
     return (
         <div className="item-card">
-            <img className="item-image" src={item.image} alt="item image"/>
+            <img loading="lazy" className="item-image" src={item.image} alt={item.item_name}/>
             <div className="rating">{item.rating.stars} ⭐ | {item.rating.count}</div>
             <div className="company-name">{item.company}</div>
             <div className="item-name">{item.item_name}</div>

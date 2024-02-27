@@ -431,3 +431,17 @@ hr.summary-line {
   margin: 0;
 }
 /* ------ Bag Page Ends ------ */
+
+/* ------Success Page Starts------ */
+.order-success-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-success-heading{
+  font-size: xx-large;
+}
+/* ------Success Page Ends------ */
