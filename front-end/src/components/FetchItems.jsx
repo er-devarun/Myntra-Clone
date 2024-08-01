@@ -14,7 +14,7 @@ function FetchItems(){
         const signal = controller.signal;
     
         dispatch(fetchStatusActions.markFetchingStarted());
-        fetch("https://myntra-clone-backend-api-chi.vercel.app/itemList", {signal})
+        fetch("https://myntra-clone-backend-api-chi.vercel.app/items", {signal})
         .then(res => res.json())
         .then(({items}) => {
             dispatch(fetchStatusActions.markFetchDone());
