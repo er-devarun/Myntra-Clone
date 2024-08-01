@@ -2,7 +2,7 @@ const fs = require('node:fs/promises');
 const path = require('path');
 
 // Define paths relative to the current file
-const itemsFilePath = path.join(__dirname, 'items.json');
+const itemsFilePath = path.join(__dirname, '..', 'items.json');
 
 async function getStoredItems() {
   const rawFileContent = await fs.readFile(itemsFilePath, { encoding: 'utf-8' });
